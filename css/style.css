@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: rgb(228, 228, 228);
+}
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    margin-top: 50px;
+}
+
+.main-form {
+    border-radius: 20px;
+    background-color: #2C9184;
+    width: 50%;
+    height: 50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #c7dbd9;
+
+}
+
+.main-form form,
+.input-group {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.main-form h2 {
+    font-size: 32px;
+    letter-spacing: 3px;
+}
+
+.input-group input {
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+}
+
+.main-form button {
+    height: 35px;
+    font-weight: 900;
+    background-color: #00584E;
+    border: none;
+    border-radius: 10px;
+    color: #c7dbd9;
+    margin-bottom: 10px;
+}
+
+.main-form button:hover {
+    transition: all 300ms ease-in-out;
+    opacity: 0.7;
+}
+
+.main-form a {
+    text-decoration: none;
+    color: #c7dbd7;
+}
+
+.form {
+    background-color: rgb(185, 225, 213);
+    padding-left: 5px;
+}
+
+.topnav {
+    background-color: #7ea1ce;
+    overflow: hidden;
+ }
+  
+.topnav a {
+    float: left;
+    color:  rgb(28, 72, 118);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.topnav a:hover {
+    background-color: #6081ac;
+    color: rgb(12, 33, 55);
+}
+  
+.topnav a.active, input {
+    background-color: #39548c;
+    color: #8da1bd;
+    cursor: pointer;
+}
+
+.topnav input {
+    float: right;
+    /* background-color: #D3C4BE;
+    color: #f2f2f2; */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border: none;
+}
+
+.newTask {
+    text-decoration: none;
+    /* background-color: rgb(70, 44, 95);
+    color: rgb(218, 202, 232); */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    position: relative;
+    top: 100px;
+    left: 70px;
+    
+    font-size: 30px;
+
+}
+
+.newTask:hover {
+    background-color: rgb(47, 29, 65);
+}
+
+.noTasks {
+    color: rgb(41, 48, 102);
+}
+
+.newTaskInput {
+    margin-top: 25px;
+}
+
+.taskHere {
+    background-color: rgb(238, 236, 236);
+    border: 1px solid #293b63;
+    border-radius: 7px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+.textBtn {
+    border: none;
+   
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+.newTask, .textBtn {
+    background-color: rgb(70, 44, 95);
+    color: rgb(218, 202, 232);
+    border-radius: 10px;
+}
+
+table {
+    float: top;
+}
+
+table, th, td {
+    border-spacing: 5px;
+    border-radius: 1px;
+}
+
+th {
+    background-color: rgb(132, 105, 157);
+    color: rgb(218, 202, 232);
+    border-radius: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 3px;
+}
+
+td {
+    background-color: rgb(218, 202, 232);
+    color: rgb(60, 40, 79);
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.deleteBtn {
+    background-color: rgb(167, 26, 26);
+    color: rgb(232, 153, 153);
+    text-decoration: none;
+    padding: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+}
