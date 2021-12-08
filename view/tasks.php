@@ -19,11 +19,7 @@ if(isset($_POST['logout'])) {
         
     
     <div class="container">
-        <!-- <h1>Tasks</h1> -->
     <table class="table">
-        <!-- <div>
-            <a href="new-task.php"><button type="button">Create a task!</button></a>
-        </div> -->
         <thead>
             <?php
             $rows = $controller->fetchEntries($id);
@@ -31,7 +27,7 @@ if(isset($_POST['logout'])) {
             {
             ?>
             <tr>
-                <th><h2>ID</h2></th>
+                <th><h2>No.</h2></th>
                 <th><h2>Text</h2></th>
                 <th><h2>Date created</h2></th>
             </tr>
@@ -48,25 +44,18 @@ if(isset($_POST['logout'])) {
                 foreach($rows as $row) {
                     $taskId += 1;
                     ?>
-                    <tr>
-                        
+                    <tr> 
                         <td><?php echo $taskId; ?></td>
                         <td><?php echo $row['text']?></td>
                         <td><?php echo $row['created_at']?></td>
                         <td>
                             <a class="deleteBtn" href="../controller/delete.php?id=<?php echo $row['id']?>">Delete</a>
                         </td>
-                        <!-- <td>
-                            <a class="deleteBtn" href="../controller/edit.php?id=<?php echo $row['id']?>">Edit</a>
-                        </td> -->
                     </tr>
                     <?php 
                         }
-                    } else { ?>
-                        
+                    } else { ?>    
                         <h2 class="noTasks">You have no tasks planned. Let's go and add something!</h2>
-                   
-                   
                     <?php
                     }
             ?>
@@ -78,6 +67,5 @@ if(isset($_POST['logout'])) {
 <?php
 
     include_once './components/footer.php';
-
 
 ?>

@@ -38,9 +38,6 @@ $stmt = $conn->prepare("INSERT INTO users (name, email, password) VALUES (?, ?, 
 $hashed = password_hash($password, PASSWORD_DEFAULT);
 $stmt->bind_param("sss", $name, $email, $hashed);
 $stmt->execute();
-
-echo "Izdevās";
-
 $stmt->close();
 $conn->close();
 
@@ -51,25 +48,17 @@ $conn->close();
         <section class="main-form">
             <h2>Register</h2>
             <form action="" method="POST">
-
-            <div class="input-group">
+                <div class="input-group">
                     <label for="name" >Enter your name</label>
-                    <input type="text" name="name" value="">
-                    <!-- <span class="error"></span> -->
-                   
+                    <input type="text" name="name" value="" class="form">                  
                 </div>
-
                 <div class="input-group">
                     <label for="email" >Enter email</label>
-                    <input type="text" name="email" value="">
-                    <!-- <span class="error"></span> -->
-                   
+                    <input type="text" name="email" value="" class="form">
                 </div>
                 <div class="input-group">
                     <label for="password" >Enter password</label>
-                    <input type="password" name="password" value="">
-                    <!-- <span class="error"></span> -->
-                  
+                    <input type="password" name="password" value="" class="form">     
                 </div>
                 <button type="submit" name="register">Sign up</button>
                 <a href="login" class="registration_link">Already have an account? Log in</a>

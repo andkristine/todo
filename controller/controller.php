@@ -9,8 +9,6 @@ class Controller
     private $db = "todo";
     private $conn;
 
-    // private $editable;
-
     public function getConn() {
         return $this->conn;
     }
@@ -18,7 +16,6 @@ class Controller
     {
         try {
             $this->conn = new mysqli($this->server, $this->username, $this->password, $this->db);
-            // echo "Success";
         } catch(Exception $e) {
             echo "Failed" . $e->getMessage();
         }
@@ -44,11 +41,5 @@ class Controller
         }
         return $res;
     }  
- 
-
-
-
-
-
 
 }
